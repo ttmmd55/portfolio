@@ -160,15 +160,6 @@ img{
     width: 53%;
     padding: 0px 70px;
 }
-.image-sectiom{
-    float: right;
-    width: 40%;
-}
-
-.image-sectiom img{
-    height: auto;
-    width: 80%;
-}
 
 .title{
     color: rgb(203, 255, 255);
@@ -185,15 +176,6 @@ img{
     margin-top: 30px;
     font-size: 16px;
     line-height: 24px;
-}
-
-.content-sectiom .social{
-    margin-top: 20px;
-}
-
-.content-sectiom .social i{
-    font-size: 30px;
-    padding: 0 10px;
 }
 
 .flex-container{
