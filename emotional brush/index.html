@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- meta viewport tag needed to make site responsive on mobile devices https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- including for some global styling -->
+        <link rel="stylesheet" href="../start.css">
+
+    </head>
+    <body>
+        <!-- if you have sub-pages think about adding a simple back button -->
+        <nav>
+            <a href="../">HOME</a>
+        </nav>
+        <header class="documentation-header">
+            <section class="center-text">
+                <h1>Emotional Brush</h1>
+                <h2>Shuting Chen</h6>
+                <p>Arduino & Max MSP & openFrameworks</p> 
+            </section>
+        </header>
+
+        <main class="documentation-page">
+            <section>
+                <div class="responsive-video centered-content">
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/858068686?h=e582bf92ce" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+                </div>
+            </section>
+            <section>
+                <h3>Introduction</h3>
+                <p>By experiencing the decompression ball, data on muscle changes are generated to simulate a process of releasing negative emotions, and ultimately audio- visualising the emotions. People should correctly recognise the diversity of emotions that they see in themselves to achieve self-healing.</p>
+            </section>
+            <section>
+                <h3>Concept and Background Research</h3>
+                <p>Mental health is also important to human beings for the development of society, so it is important to explore the changes in emotions produced by human beings in the environment, and to visualise emotions in order to achieve a certain degree of 'self-healing'. This is challenging and researchable. I have been researching the cross-fertilisation of computational art and art healing. This project is based on the study of human physiological and psychological data collection instruments, and attempts to explore the role of computational art to enhance the stimulation of multi-sensory experiences in art healing.
+                </p> 
+                <p>Starting from the emotion itself, I discovered the nature of negative emotions in my research. First of all, we need to acknowledge the inevitability and necessity of negative emotions. Over millions of years of evolutionary history, in the long process of fighting against all kinds of disasters, human beings have developed a particularly important protective mechanism - stress response, that is, when encountering setbacks and tribulations, three particularly important organs of the body: the hypothalamus, pituitary and adrenal glands, will secrete a large amount of stress hormones(Anacker,2014). The effects of stress hormones make people nervous, fearful and angry. Stress hormones activate the human stress response against viruses, disasters, and dangers, making the human heart beat faster, blood circulation accelerated, muscle strength and bone strength strengthened, senses sharper, eyes sharper, ears better, and noses sharper, so that we are able to identify all kinds of risks and get ready for the struggle (Kaiping Peng, 2023).</p>
+                <p>Then look at the art of healing, art healing is actually through the art of smoothing out their own negative emotions, I think the courage to face negative emotions, facing up to the production of stress hormones. It is beneficial for people to improve their self-repair ability, which is called resilience in psychology. That is, an individual's ability to face adversity, trauma, tragedy, threats, or other major stresses in a well-adapted process, that is, the ability to bounce back from difficult experiences. Mandela famously said, "the greatest glory in living lies not in never falling but in rising every time we fall."</p>
+                <p>Returning eventually to computational art, traditional computational art can be expressed using a variety of techniques, with some physical computing instruments collecting data about the human body. This is the same as psychology, and through research, we found that the way of obtaining human data in psychology is also used in computational art. Although it is not as professional and precise, the principle is the same. Many artists also use instruments such as EEG interfaces, muscle sensors, and galvanic sensors to obtain data to generate their works. This makes me see the development direction of cross-fertilisation of disciplines. Ultimately, the integration and use of technology needs to be recursive and developed in practice in order to know whether it can heal those who need healing, so I started my project from myself.</p>
+                <p>I wanted a 'turning negatives into positives' approach to heal myself. I'm afraid of passing on bad energy, and at the same time, I also have some very common stresses that everyone has in society. The double stress makes me sometimes not know how to vent my emotions. So, I've gone and started this project, with the hope that people similar to me can gradually come to acknowledge their various emotions and learn to heal themselves.</p>
+            </section>
+            <section>
+                <h3>Technical Implementation</h3>
+                <p>Firstly, I used muscle sensors. Users generate raw data by squeezing a stress ball to produce changes in their muscles. Research has shown that the brain releases stress hormones that cause a person's muscle strength to increase, so I used the muscle sensors to simulate the generation of emotions and form emotional data. This is data generation through Arduino and when the user experiences it, it is a process of releasing stress and transferring that emotion. It is an enjoyable, comfortable and stress relieving process for some experiencers.</p>
+                <p>The data is then sent through the serial port to Max, which is programmed to form the noise. I want to express bad emotions as a negative state, therefore disorganised and annoying sounds will be used to simulate a bad human state. Currently the project is still a state of emotional release and venting, and then the final step of conversion.</p>
+                <p>Finally the sound data will be transferred to openFramworks via OSC to generate a visual and can change the colour. This visual is generated by rewriting the code of the shader that simulates the internal structure of the brain, because emotion affects the brain to secrete some substances, and the release of these substances too much or too little will affect the part of the human body that controls the emotion to be imbalanced, which will cause mental illness. The choice of a simulated brain shader for the main visual was an attempt to express the relationship between emotions and the brain. I made the visuals to have a soothing feeling, a certain regularity that can make a person calm, which is the process of gradually making a bad state better. The background colour I made it vary between blue and green because both blue and green have the effect of relaxing people and relieving muscle tension. This is the process of self-healing that I want to create through this experience so that people can recognise their different emotions and learn to transform negative emotions into positive ones.</p>
+            </section>
+            <section>
+                <h3>Reflection and Future Development</h3>
+                <p>The project is generally developable and I think I have the process of generating, transforming and releasing emotions expressed rationally through different techniques. To a certain extent, there is a reasonable combination of concept and technology. But the presentation of the final audiovisual effect is a bit simple, and there are more possibilities for the impact of data on openFrameworks. Not only that, but the impact of the project needs to be expanded, and more ways of healing need to be explored, not just ways that work for me alone. As my project develops further, I need to consider the diversity of audiovisualised outputs, as well as the diversity of users, in order to better demonstrate the role that computer art can play in the future of art healing through the enhancement of stimulating multi-sensory experiences.</p>
+            </section>
+            <section>
+                <h3>References</h3>
+                <li>[1] Anacker, C., O'Donnell, K.J. and Meaney, M.J. (2014) ‘Early life adversity and the epigenetic programming of hypothalamic-pituitary-adrenal function’, Dialogues in clinical neuroscience, 16(3), pp. 321–333. doi:10.31887/DCNS.2014.16.3/canacker.</li>
+                <li>[2]K.Peng.(2023). 'Positive Psychology and Overcoming Negative Emotions', Guangming Daily, 2(11), pp.10.</li>
+                <li>[3]code:Artleet(2019).'Alien brains', Available from:https://www.shadertoy.com/view/3lfSz4#</li>
+            </section>
+        </main>
+    </body>
+</html>

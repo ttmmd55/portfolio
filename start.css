@@ -41,9 +41,6 @@ li {
     color: #2D033B;
 }
 
-.nav {
-    color: aliceblue;
-}
 .logo{
     font-size: 40px;
 }
@@ -237,7 +234,7 @@ img{
 }
 
 .flex-item a#vthree{
-    background-image: url(assets/me.jpg); 
+    background-image: url(assets/p5.jpg); 
 }
 
 .flex-item a#vfour{
