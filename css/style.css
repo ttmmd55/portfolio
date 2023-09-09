@@ -208,19 +208,19 @@ img{
     transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
 }
 .flex-item a#vone{
-    background-image: url(assets/pc1.jpg); 
+    background-image: url(../assets/pc1.jpg); 
 }
 
 .flex-item a#vtwo{
-    background-image: url(assets/tree.png); 
+    background-image: url(../assets/tree.png); 
 }
 
 .flex-item a#vthree{
-    background-image: url(assets/p5.jpg); 
+    background-image: url(../assets/p5.jpg); 
 }
 
 .flex-item a#vfour{
-    background-image: url(assets/emotional\ brush.png); 
+    background-image: url(../assets/emotional-brush.png); 
 }
 
 .flex-item a:hover{
