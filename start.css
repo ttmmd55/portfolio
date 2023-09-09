@@ -90,11 +90,11 @@ img{
 
 .photo{
     display: flex;
-    width: 200px;
+    
 }
 
 .subtitle{
-    margin-left: 400px;
+    margin-left: 100px;
     padding-left: 22px;
     line-height: 47px;
     padding: 65px;
