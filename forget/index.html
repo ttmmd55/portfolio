@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- meta viewport tag needed to make site responsive on mobile devices https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+        <!-- including for some global styling -->
+        <link rel="stylesheet" href="../start.css">
+
+    </head>
+    <body>
+        <nav class="nav">
+            <a href="../start.html">HOME</a>
+        </nav>
+        <header class="documentation-header">
+            <section class="center-text">
+                <h1>Death is not the end, forgetting is</h1>
+                <h2>Shuting Chen</h6>
+                <p>Arduino</p> 
+            </section>
+        </header>
+
+        <main class="documentation-page">
+            <section>
+                <div class="responsive-video centered-content">
+                    <iframe src="https://player.vimeo.com/video/780222034?h=44ed6db806" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section>
+                <h3>Introduction</h3>
+                <p>The yellow light is used to build the output device, and then the sound sensor is used as the input. When talking to the device, the yellow light will light up with the sound waves, which means talking to people in the world of the dead and expressing my misses. When I get up and leave, away from the device, the light will no longer be on, punctuating the theme "Death is not the end, forgetting is."</p>
+            </section>
+            <section>
+                <h3>Concept and Background Research</h3>
+                
+                <p>There is this passage in David Eagleman's Sum: Forty Tales from the Afterlives: In one's life, one dies three times. The first time, when your heart stops beating and your breathing dies, you are biologically declared dead; the second time, when you are buried and people attend your funeral in black, they declare that you no longer exist in this society and you pass away quietly; the third death is when the last person in the world who remembers you, forgets you, and so you truly die. The whole universe will no longer be relevant to you. In life, there is always birth, old age, sickness and death, and time takes away many things. People who were once within reach may one day suddenly disappear, never to be seen again. So when faced with this, one always falls into a downward spiral of emotions. But life still has to move on and look forward, so I wanted to make a device to remove the fear of death, to dissolve the grief of the passing of a loved one, and to allow the thoughts to give the deceased a presence beyond time.</p>
+                <p>I took inspiration from the movie coco. Every year on the Day of the Dead, a passage opens between the human world and the world of the dead, a bridge made of chrysanthemum petals, from which the souls of the dead from the world of the dead can visit their loved ones in the land of the living, a bridge between the two worlds. When they put their feet on it, it glows. Therefore, I wanted to make an installation where the human world talks to the world of the dead, allowing people to express their thoughts and remembrance of their deceased friends and relatives. </p>
+                
+                <!-- if you have a full width image try make it not too tall -->
+                <img src="../assets/p22.jpg"/>
+
+                <p>As my gap year was experiencing the deaths of two of the most important people in my life, my grandfather and grandmother, I missed them beyond words. During the days of my grandfather's funeral, I had been watching <Coco> . There is a quote from the film that I always remember: "The real death is that no one in the world remembers you", and this device and the finished film are for my grandparents, whom I will always remember in my limited life.</p>
+                
+            </section>
+            <section>
+                <h3>Technical Implementation</h3>
+                <p>Use yellow lights (2 WS2811 Pixels Digital Addressable LED String Lights) to build the output device and cover it with a few chrysanthemums. The flower language of the yellow chrysanthemum is a miss. It can represent a feeling of missing a friend or relative, or a sorrowful mourning for someone who has passed away. The sound sensor then acts as an input and when talking to the device, the yellow light will light up with the sound waves, signifying a conversation with someone in the world of the dead and expressing one's missing. When I get up to leave and move away from the device, the light will no longer be on, punctuating the theme "Death is not the end, forgetting is. </p>
+            </section>
+            <section>
+                <h3>List of parts</h3>
+                <li>2 WS2811 Pixels Digital Addressable LED String Lights</li>
+                <li>1 sound sensor</li>
+                <li>1 ultrasonic sensor</li>
+            </section>
+            <section>
+                <h3>Code</h3>
+                <li>
+                    <a href="https://github.com/ttmmd55/-forget" >Github link</a>
+                </li>
+            </section>
+        </main>
+    </body>
+</html>

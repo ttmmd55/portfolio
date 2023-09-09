@@ -31,9 +31,9 @@ li {
     align-items: center;
     justify-content: space-between;
     padding: 19px;
-    color: #2B3467;
+    color: #3755ff;
     /* color: white; */
-    color: #54fcff;
+    color: rgb(181, 255, 255);
 }
 
 .nav-links a{
@@ -41,6 +41,9 @@ li {
     color: #2D033B;
 }
 
+.nav {
+    color: aliceblue;
+}
 .logo{
     font-size: 40px;
 }
@@ -78,26 +81,30 @@ i:hover{
 img{
     /* height: 449px;
     width: 575px; */
-    height: 410px;
+    /* height: 410px;
     width: 525px;
     vertical-align: top;
     justify-content: left;
-    margin-left: 30px;
+    margin-left: 30px; */
+
+    width: 100%;
+
 }
 
 .photo{
     display: flex;
+    width: 200px;
 }
 
 .subtitle{
-    margin-left: 35px;
+    margin-left: 400px;
     padding-left: 22px;
     line-height: 47px;
     padding: 65px;
 }
 
 .subtitle-mainhead{
-    color: #EB455F;
+    color: #1900ff;
 }
 
 .subtitle-intro{
@@ -111,7 +118,7 @@ img{
 .details{
     margin-top: 20px;
     /* background-color:#22A39F;  */
-    background-color: #FF597B;
+    background-color: #1900ff;
     color: white;
     text-decoration: none;
     border: none;
@@ -124,7 +131,7 @@ img{
 }
 
 .details:hover{
-    background-color: burlywood;
+    background-color: rgb(255, 76, 6);
     color: white;
 }
 
@@ -133,6 +140,7 @@ img{
 }
 
 .subtitle a{
+    color: white;
     text-decoration: none;
 }
 
@@ -166,7 +174,8 @@ img{
 }
 
 .title{
-    font-size: 30px;
+    color: rgb(203, 255, 255);
+    font-size: 20px;
 }
 
 .content-sectiom title{
@@ -175,9 +184,10 @@ img{
 }
 
 .content p{
+    color: white;
     margin-top: 30px;
-    font-size: 24px;
-    line-height: 44px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .content-sectiom .social{
@@ -189,16 +199,98 @@ img{
     padding: 0 10px;
 }
 
-.foot-down{
-    background-color: #97DECE;
+.flex-container{
+    display: flex; /* all children will now be flex items */
+    flex-direction: row; /* other option is column */
+    flex-wrap: wrap; /* means the children will wrap to a new line */
 }
 
-.foot{
-    justify-content: center;
-    text-align: center;
-}
-
-.foot i{
-    font-size: 35px;
+.flex-item{
+    display: flex;
+    /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+    box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
     padding: 5px;
+}
+.flex-item a{
+    display: flex;
+    width: 100%;
+    height: 0;
+    padding: 30% 0;
+    /* background-image: url(../assets/images/lightgrey-line.jpeg); change the image to one of you choice */
+    background-position: center;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+.flex-item a#vone{
+    background-image: url(assets/pc1.jpg); 
+}
+
+.flex-item a#vtwo{
+    background-image: url(assets/tree.png); 
+}
+
+.flex-item a#vthree{
+    background-image: url(assets/me.jpg); 
+}
+
+.flex-item a#vfour{
+    background-image: url(assets/emotional\ brush.png); 
+}
+
+.flex-item a:hover{
+    color:#bbbbbb;
+    background-size: 120%;
+}
+
+.flex-item h4{
+   margin:120px;
+   background-color:  #ffffff96;
+   color: #1900ff;
+   padding:5px 10px;
+}
+
+main.documentation-page h3{
+    margin-top: 40px;
+}
+
+main,
+header{
+    background-color:rgb(181, 255, 255);
+    color: #3755ff;
+    width:100%;
+    max-width:1400px; /* means it won't be larger than 1200px on larger screens */
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 30px 3%;
+}
+
+header.documentation-header{
+    padding: 0 3%;
+}
+
+.documentation-header section,
+main.documentation-page section{
+    margin: 10px 10%;
+}
+
+.responsive-video{
+    position: relative;
+    width: 100%; /* adjust this and the padding-top to change how big it is*/
+    height: 0;
+    padding-top: 57%; /* padding top is in reltation to the width of parent, it preserves aspect ratio*/
+    /* margin: 0 auto; */ /*this would center your video in the section container*/
+}
+.responsive-video iframe{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
 }
