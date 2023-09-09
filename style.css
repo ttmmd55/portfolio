@@ -143,7 +143,7 @@ img{
 
 /* #####################Projects################### */
 
-.sectiom{
+.section{
     width: 100%;
     min-height: 100vh;
 }
@@ -155,7 +155,7 @@ img{
     padding-top: 100px;
 }
 
-.content-sectiom{
+.content-section{
     float: left;
     width: 53%;
     padding: 0px 70px;
@@ -166,7 +166,7 @@ img{
     font-size: 20px;
 }
 
-.content-sectiom title{
+.content-section title{
     text-transform: uppercase;
     font-size: 35px;
 }
